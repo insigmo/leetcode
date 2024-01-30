@@ -74,24 +74,24 @@ class Solution:
                 result += self.roman_nums[s[i]]
                 break
 
-            if s[i] == 'I' and s[i + 1] in ('V', 'X'):
+            if s[i] == "I" and s[i + 1] in ("V", "X"):
                 counter = i + 1
                 result += self.roman_nums[s[counter]] - 1
 
-            elif s[i] == 'X' and s[i + 1] in ('L', 'C'):
+            elif s[i] == "X" and s[i + 1] in ("L", "C"):
                 counter = i + 1
                 result += self.roman_nums[s[counter]] - 10
 
-            elif s[i] == 'C' and s[i + 1] in ('D', 'M'):
+            elif s[i] == "C" and s[i + 1] in ("D", "M"):
                 counter = i + 1
                 result += self.roman_nums[s[counter]] - 100
             else:
                 result += self.roman_nums[s[i]]
-        print(f'{s} = {result}')
+        print(f"{s} = {result}")
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert Solution().romanToInt("III") == 3
     assert Solution().romanToInt("LVIII") == 58
     assert Solution().romanToInt("MCMXCIV") == 1994

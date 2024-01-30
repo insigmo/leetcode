@@ -31,13 +31,12 @@ s consists of parentheses only '()[]{}'.
 
 
 class Solution:
-
     def isValid(self, s: str) -> bool:
         stack = []
         braces = {
-            '}': '{',
-            ']': '[',
-            ')': '(',
+            "}": "{",
+            "]": "[",
+            ")": "(",
         }
 
         for b in s:
@@ -51,7 +50,7 @@ class Solution:
         return not stack
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert Solution().isValid("()") is True
     assert Solution().isValid("()[]{}") is True
     assert Solution().isValid("(]") is False

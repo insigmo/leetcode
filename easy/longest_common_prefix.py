@@ -30,7 +30,7 @@ from typing import List
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         counter = 0
-        result = ''
+        result = ""
         max_len = sorted([len(w) for w in strs])[0] - 1
 
         while counter <= max_len:
@@ -43,10 +43,13 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert Solution().longestCommonPrefix(["flower", "flow", "flight"]) == "fl"
     assert Solution().longestCommonPrefix(["dog", "racecar", "car"]) == ""
     assert Solution().longestCommonPrefix([""]) == ""
     assert Solution().longestCommonPrefix(["a"]) == "a"
     assert Solution().longestCommonPrefix(["ab", "a"]) == "a"
-    assert Solution().longestCommonPrefix(["flower", "flower", "flower", "flower"]) == "flower"
+    assert (
+        Solution().longestCommonPrefix(["flower", "flower", "flower", "flower"])
+        == "flower"
+    )

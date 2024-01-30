@@ -37,7 +37,7 @@ class Solution:
         return 0 <= x == int(str(x)[::-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert Solution().isPalindrome(121) is True
     assert Solution().isPalindrome(-121) is False
     assert Solution().isPalindrome(10) is False
