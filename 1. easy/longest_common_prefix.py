@@ -49,7 +49,4 @@ if __name__ == "__main__":
     assert Solution().longestCommonPrefix([""]) == ""
     assert Solution().longestCommonPrefix(["a"]) == "a"
     assert Solution().longestCommonPrefix(["ab", "a"]) == "a"
-    assert (
-        Solution().longestCommonPrefix(["flower", "flower", "flower", "flower"])
-        == "flower"
-    )
+    assert Solution().longestCommonPrefix(["flower", "flower", "flower", "flower"]) == "flower"
