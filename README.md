@@ -1,3 +1,6 @@
+## Внимание!
+## Здесь приведены задачи, которые помогут вам подтянуть необходимую базу по алгоритмам. Если вы выполните эти задачи, то вы можете прособеседоваться на AA секциях на собеседованиях
+
 ### linked lists:
 - https://leetcode.com/problems/merge-k-sorted-lists/
 - https://leetcode.com/problems/linked-list-cycle/
